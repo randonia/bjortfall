@@ -1,0 +1,68 @@
+html {
+    --color-background: #151515;
+    --color-foreground: #d7d0c7;
+    --color-black-bright:   #404040;
+    --color-black:   #101010;
+    --color-blue-bright:    #4e9fb1;
+    --color-blue:    #7dc1cf;
+    --color-cyan-bright:    #42717b;
+    --color-cyan:    #6d878d;
+    --color-green-bright:   #a0cf5d;
+    --color-green:   #b8d68c;
+    --color-magenta-bright: #8542ff;
+    --color-magenta: #9b64fb;
+    --color-red-bright:     #d23d3d;
+    --color-red:     #e84f4f;
+    --color-white-bright:   #dddddd;
+    --color-white:   #dddddd;
+    --color-yellow-bright:  #f39d21;
+    --color-yellow:  #e1aa5d;
+    height: calc(100%);
+}
+
+body {
+  height: calc(100%);
+}
+
+#root {
+  height: calc(100%);
+}
+
+.App {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  text-align: center;
+  height: calc(100%);
+  display: grid;
+  grid-template-rows: 5em auto 2em;
+  grid-template-columns: 7vw auto 1em;
+  grid-template-areas: "logo header" "content content" "footer footer";
+}
+
+.App-logo {
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  grid-area: logo;
+  justify-content: center;
+}
+
+.App-logo-img {
+  max-height: 2em;
+}
+
+.App-header {
+  grid-area: header;
+}
+
+.App-content {
+  grid-area: content;
+}
+
+.App-footer {
+  grid-area: footer;
+  background-color: var(--color-black);
+  color: var(--color-green);
+  text-align: right;
+  padding-right: 1vw;
+}
