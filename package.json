@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "description": "A simple game server monitoring tool",
   "dependencies": {
+    "config-yml": "^0.10.3",
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "gamedig": "^3.0.0"
   },
   "scripts": {
-    "dev": "nodemon --inspect server.js"
+    "dev": "nodemon --require dotenv/config --inspect server.js --env develop"
   },
   "repository": {
     "type": "git",

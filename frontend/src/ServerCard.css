@@ -1,0 +1,26 @@
+.ServerCard {
+  border: 1px var(--color-green) solid;
+  display: grid;
+  min-height: 5vw;
+  width: calc(100% - 2px);
+  color: var(--color-green);
+  grid-template-columns: 10% auto 3%;
+  grid-template-rows: 25% 75%;
+  font-size: 1.5vw;
+}
+
+.ServerCard-Type {
+  padding-left: 0.2vw;
+  display: inline;
+  font-size: 0.7vw;
+  text-align: left;
+}
+
+.ServerCard-Password {
+  font-size: 1vw;
+}
+
+.ServerCard-Title {
+  font-size: 2vw;
+  text-align: left;
+}

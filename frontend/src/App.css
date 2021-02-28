@@ -1,22 +1,14 @@
 html {
     --color-background: #151515;
-    --color-foreground: #d7d0c7;
-    --color-black-bright:   #404040;
-    --color-black:   #101010;
-    --color-blue-bright:    #4e9fb1;
-    --color-blue:    #7dc1cf;
-    --color-cyan-bright:    #42717b;
-    --color-cyan:    #6d878d;
-    --color-green-bright:   #a0cf5d;
-    --color-green:   #b8d68c;
-    --color-magenta-bright: #8542ff;
-    --color-magenta: #9b64fb;
-    --color-red-bright:     #d23d3d;
-    --color-red:     #e84f4f;
-    --color-white-bright:   #dddddd;
-    --color-white:   #dddddd;
-    --color-yellow-bright:  #f39d21;
-    --color-yellow:  #e1aa5d;
+    --color-foreground: #d0d0d0;
+    --color-black:   #151515;
+    --color-red:     #fb9fb1;
+    --color-green:   #acc267;
+    --color-yellow:  #ddb26f;
+    --color-blue:    #6fc2ef;
+    --color-magenta: #e1a3ee;
+    --color-cyan:    #12cfc0;
+    --color-white:   #d0d0d0;
     height: calc(100%);
 }
 
@@ -28,30 +20,32 @@ body {
   height: calc(100%);
 }
 
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
 .App {
   background-color: var(--color-background);
   color: var(--color-foreground);
   text-align: center;
   height: calc(100%);
   display: grid;
-  grid-template-rows: 5em auto 2em;
-  grid-template-columns: 7vw auto 1em;
-  grid-template-areas: "logo header" "content content" "footer footer";
-}
-
-.App-logo {
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  grid-area: logo;
-  justify-content: center;
+  grid-template-columns: 5vw auto 5vw;
+  grid-template-rows: 3vw auto 2vw;
+  grid-template-areas: ". header ." ". content ." "footer footer footer";
 }
 
 .App-logo-img {
-  max-height: 2em;
+  display: block;
+  max-height: 2.5em;
+  max-width: 2.5em;
+  margin-top: 4px;
 }
 
 .App-header {
+  color: var(--color-white);
+  display: flex;
+  font-size: 1vw;
   grid-area: header;
 }
 
